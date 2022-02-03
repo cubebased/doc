@@ -14,17 +14,17 @@ links:
     icon: home
 
   - text: Issues
-    link: https://github.com/cubebased/docs/issues
+    link: https://github.com/cubebased/doc/issues
     icon: issue-opened
     target: blank
 
   - text: Discussions
-    link: https://github.com/cubebased/docs/discussions
+    link: https://github.com/cubebased/doc/discussions
     icon: comment-discussion
     target: blank
 
   - text: GitHub
-    link: https://github.com/cubebased/docs
+    link: https://github.com/cubebased/doc
     icon: mark-github
     target: blank
     
