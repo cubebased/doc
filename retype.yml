@@ -3,8 +3,8 @@ output: .retype
 url: doc.cubebased.com
 branding:
   title: Cubebased
-  logo: /static/logo_w128.png
-  logoDark: /static/logo_b128.png
+  logo: /static/logo_b128.png
+  logoDark: /static/logo_w128.png
   label: Docs
 edit:
   repo: github.com/cubebased/doc
