@@ -8,24 +8,29 @@
     <!-- Primary Meta Tags -->
     <title>Overview</title>
     <meta name="title" content="Overview">
+    <meta name="description" content="The server connects to the web server running the viewer." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://doc.cubebased.com/archtitecture/overview/">
     <meta property="og:title" content="Overview">
+    <meta property="og:description" content="The server connects to the web server running the viewer.">
+    <meta property="og:image" content="https://doc.cubebased.com/static/archi.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://doc.cubebased.com/archtitecture/overview/">
     <meta property="twitter:title" content="Overview">
+    <meta property="twitter:description" content="The server connects to the web server running the viewer.">
+    <meta property="twitter:image" content="https://doc.cubebased.com/static/archi.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.714918567266" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.715555308807" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.714918567266" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.715555308807" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.714918567266" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.715555308807" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -235,6 +240,21 @@
         <span>Overview</span>
     </h1>
 </doc-anchor-target>
+<p><figure class="content-center">
+    <img src="../../static/archi.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ol>
+<li>The server connects to the web server running the viewer.</li>
+<li>The server transmits a list of IP addresses of blockchain nodes</li>
+<li>The client sends POST/GET requests to individual listed blockchain nodes.</li>
+<li>Client receives metadata (IPFS hash, comments, tags, author, ...) as a response</li>
+<li>The client establishes a connection to an IPFS gateway</li>
+<li>The IPFS gateway establishes a connection to the IPFS network</li>
+<li>The requested media is downloaded from the IPFS network</li>
+<li>The IPFS gateway transfers the media to the client</li>
+</ol>
 
 
 <div class="flex items-center mt-6 mb-6">
