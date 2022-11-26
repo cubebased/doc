@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.722789811580" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.722790049205" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722789811580" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722790049205" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722789811580" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722790049205" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -248,10 +248,23 @@
 <p>This action active a user for the cbased contract.
 Users who are not activated cannot perform any action in the cbased contract</p>
 <p>Required authorization: cbased</p>
-<p>Parameter:
-| name | type  |
-|---|---|
-| username | name |</p>
+<p>Parameter:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>name</td>
+</tr>
+</tbody>
+</table>
+</div>
 <doc-anchor-target id="addcomment">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#addcomment">#</doc-anchor-trigger>
@@ -259,16 +272,70 @@ Users who are not activated cannot perform any action in the cbased contract</p>
     </h1>
 </doc-anchor-target>
 <p>This action add a comment to a specific upload</p>
-<p>Required authorization: <any active user></p>
-<p>Parameter:
-| name | type  |
-|---|---|
-| autor | name |
-| text | string |
-| uploadid | uint64 |
-| parentcommentid | uint64 |</p>
+<p>Required authorization: any active user</p>
+<p>Parameter:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autor</td>
+<td>name</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+</tr>
+<tr>
+<td>uploadid</td>
+<td>uint64</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="addccomment">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addccomment">#</doc-anchor-trigger>
+        <span>addccomment</span>
+    </h2>
+</doc-anchor-target>
+<p>This action add a comment to a comment.</p>
+<p>Required authorization: any active user</p>
+<p>Parameter:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autor</td>
+<td>name</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+</tr>
+<tr>
+<td>uploadid</td>
+<td>uint64</td>
+</tr>
+<tr>
+<td>parentcommentid</td>
+<td>uint64</td>
+</tr>
+</tbody>
+</table>
+</div>
 <ul>
-<li>addccomment</li>
 <li>addcooldown</li>
 <li>addtag</li>
 <li>addtruster</li>
