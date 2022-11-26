@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.722791464873" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.722792473540" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722791464873" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722792473540" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722791464873" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722792473540" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -240,6 +240,7 @@
 </doc-anchor-target>
 <p>The Cbased contract is the main contract and consists of functions and tables.</p>
 <p>You can find a list of all data types <a href="https://eosio.stackexchange.com/questions/1837/list-of-available-datatypes-for-action-parameter">here</a></p>
+<p>The order of the parameters is crucial for the integration with the Smart Contract. The order in the table corresponds to the order of the parameters.</p>
 <doc-anchor-target id="actions">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#actions">#</doc-anchor-trigger>
@@ -301,7 +302,7 @@ Users who are not activated cannot perform any action in the cbased contract</p>
         <span>addupload</span>
     </h3>
 </doc-anchor-target>
-<p>This action add a new upload into the <doc-anchor-trigger to="###uploads">Upload Table</doc-anchor-trigger>.</p>
+<p>This action add a new upload into the <doc-anchor-trigger to="#uploads">Upload Table</doc-anchor-trigger>.</p>
 <p>Required authorization: any active user</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -345,6 +346,8 @@ Users who are not activated cannot perform any action in the cbased contract</p>
         <span>delupload</span>
     </h3>
 </doc-anchor-target>
+<p>This action delete the selected upload. In addition, all comments and tags will be deleted for this upload.</p>
+<p>Required authorization: cbased</p>
 <doc-anchor-target id="addcomment">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#addcomment">#</doc-anchor-trigger>
@@ -419,6 +422,32 @@ Users who are not activated cannot perform any action in the cbased contract</p>
         <span>addtag</span>
     </h3>
 </doc-anchor-target>
+<p>This action add a tag to a upload. This action effects the <doc-anchor-trigger to="#tags">Tag Table</doc-anchor-trigger> and <doc-anchor-trigger to="#withthistag">withthistag Table</doc-anchor-trigger>. If the transmitted tagtext is also new in a global scope the <doc-anchor-trigger to="#globaltags">Global Tag Table</doc-anchor-trigger> will be also effected.</p>
+<p>Required authorization: any active user</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autor</td>
+<td>name</td>
+</tr>
+<tr>
+<td>uploadid</td>
+<td>uint64</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+</div>
 <doc-anchor-target id="addtruster">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#addtruster">#</doc-anchor-trigger>
@@ -529,6 +558,88 @@ Users who are not activated cannot perform any action in the cbased contract</p>
 <tr>
 <td>token</td>
 <td>int32</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="tags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tags">#</doc-anchor-trigger>
+        <span>tags</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tagid</td>
+<td>uint64</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+</tr>
+<tr>
+<td>autor</td>
+<td>name</td>
+</tr>
+<tr>
+<td>token</td>
+<td>int32</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="globaltags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#globaltags">#</doc-anchor-trigger>
+        <span>globaltags</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>globaltagid</td>
+<td>uint64</td>
+</tr>
+<tr>
+<td>text</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="withthistag">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#withthistag">#</doc-anchor-trigger>
+        <span>withthistag</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uploadid</td>
+<td>uint64</td>
 </tr>
 </tbody>
 </table>
