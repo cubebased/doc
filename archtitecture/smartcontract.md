@@ -7,7 +7,9 @@ tags: [architecture]
 
 # Cbased Contract
 
-The Cbased contract is the main contract and consists of these functions and tables:
+The Cbased contract is the main contract and consists of functions and tables.
+
+You can find a list of all data types [here](https://eosio.stackexchange.com/questions/1837/list-of-available-datatypes-for-action-parameter)
 
 ## Actions
 
@@ -24,9 +26,18 @@ Required authorization: cbased
 
 ### banuser
 
+This action ban and deactive a user for the cbased contract. **This change cannot be undone.** Users can not longer perform any action in the cbased contract.
+
+Required authorization: cbased
+
+| Parametername | type  |
+|---|---|
+| username | name |
+
+
 ### addupload
 
-This action add a new upload into the [Upload Table](### uploads).
+This action add a new upload into the [Upload Table](###uploads).
 
 Required authorization: any active user
 
