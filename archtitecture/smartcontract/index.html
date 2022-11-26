@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Cbased Contract</title>
     <meta name="title" content="Cbased Contract">
-    <meta name="description" content="The Cbased contract is the main contract and consists of these functions:" />
+    <meta name="description" content="The Cbased contract is the main contract and consists of these functions and tables:" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://doc.cubebased.com/archtitecture/smartcontract/">
     <meta property="og:title" content="Cbased Contract">
-    <meta property="og:description" content="The Cbased contract is the main contract and consists of these functions:">
+    <meta property="og:description" content="The Cbased contract is the main contract and consists of these functions and tables:">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://doc.cubebased.com/archtitecture/smartcontract/">
     <meta property="twitter:title" content="Cbased Contract">
-    <meta property="twitter:description" content="The Cbased contract is the main contract and consists of these functions:">
+    <meta property="twitter:description" content="The Cbased contract is the main contract and consists of these functions and tables:">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.722790049205" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.722791021725" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722790049205" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722791021725" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722790049205" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722791021725" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -238,22 +238,27 @@
         <span>Cbased Contract</span>
     </h1>
 </doc-anchor-target>
-<p>The Cbased contract is the main contract and consists of these functions:</p>
-<doc-anchor-target id="activateuser">
+<p>The Cbased contract is the main contract and consists of these functions and tables:</p>
+<doc-anchor-target id="actions">
     <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#actions">#</doc-anchor-trigger>
+        <span>Actions</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="activateuser">
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#activateuser">#</doc-anchor-trigger>
         <span>activateuser</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>This action active a user for the cbased contract.
 Users who are not activated cannot perform any action in the cbased contract</p>
 <p>Required authorization: cbased</p>
-<p>Parameter:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>name</th>
+<th>Parametername</th>
 <th>type</th>
 </tr>
 </thead>
@@ -265,20 +270,75 @@ Users who are not activated cannot perform any action in the cbased contract</p>
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="addcomment">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addcomment">#</doc-anchor-trigger>
-        <span>addcomment</span>
-    </h1>
+<doc-anchor-target id="banuser">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#banuser">#</doc-anchor-trigger>
+        <span>banuser</span>
+    </h3>
 </doc-anchor-target>
-<p>This action add a comment to a specific upload</p>
+<doc-anchor-target id="addupload">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addupload">#</doc-anchor-trigger>
+        <span>addupload</span>
+    </h3>
+</doc-anchor-target>
+<p>This action add a new upload into the [Upload Table](### uploads).</p>
 <p>Required authorization: any active user</p>
-<p>Parameter:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>name</th>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autor</td>
+<td>name</td>
+</tr>
+<tr>
+<td>ipfshash</td>
+<td>string</td>
+</tr>
+<tr>
+<td>ipfshash_thumb</td>
+<td>string</td>
+</tr>
+<tr>
+<td>uploadtext</td>
+<td>string</td>
+</tr>
+<tr>
+<td>filetyp</td>
+<td>string</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>uint8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="delupload">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#delupload">#</doc-anchor-trigger>
+        <span>delupload</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="addcomment">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addcomment">#</doc-anchor-trigger>
+        <span>addcomment</span>
+    </h3>
+</doc-anchor-target>
+<p>This action add a comment to a specific upload</p>
+<p>Required authorization: any active user</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
 <th>type</th>
 </tr>
 </thead>
@@ -299,19 +359,18 @@ Users who are not activated cannot perform any action in the cbased contract</p>
 </table>
 </div>
 <doc-anchor-target id="addccomment">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#addccomment">#</doc-anchor-trigger>
         <span>addccomment</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>This action add a comment to a comment.</p>
 <p>Required authorization: any active user</p>
-<p>Parameter:</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>name</th>
+<th>Parametername</th>
 <th>type</th>
 </tr>
 </thead>
@@ -335,27 +394,126 @@ Users who are not activated cannot perform any action in the cbased contract</p>
 </tbody>
 </table>
 </div>
-<ul>
-<li>addcooldown</li>
-<li>addtag</li>
-<li>addtruster</li>
-<li>addupload</li>
-<li>banuser</li>
-<li>betruster</li>
-<li>claimrewards</li>
-<li>delupload</li>
-<li>init</li>
-<li>remcooldown</li>
-<li>reportupload</li>
-<li>trustervote</li>
-<li>voteupload</li>
-</ul>
+<doc-anchor-target id="addtag">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addtag">#</doc-anchor-trigger>
+        <span>addtag</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="addtruster">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addtruster">#</doc-anchor-trigger>
+        <span>addtruster</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="betruster">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#betruster">#</doc-anchor-trigger>
+        <span>betruster</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="claimrewards">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#claimrewards">#</doc-anchor-trigger>
+        <span>claimrewards</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="addcooldown">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addcooldown">#</doc-anchor-trigger>
+        <span>addcooldown</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="remcooldown">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#remcooldown">#</doc-anchor-trigger>
+        <span>remcooldown</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="trustervote">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#trustervote">#</doc-anchor-trigger>
+        <span>trustervote</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="reportupload">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reportupload">#</doc-anchor-trigger>
+        <span>reportupload</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="voteupload">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#voteupload">#</doc-anchor-trigger>
+        <span>voteupload</span>
+    </h3>
+</doc-anchor-target>
 <doc-anchor-target id="action">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#action">#</doc-anchor-trigger>
         <span>Action</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="tables">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tables">#</doc-anchor-trigger>
+        <span>Tables</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="uploads">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uploads">#</doc-anchor-trigger>
+        <span>uploads</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uploadid</td>
+<td>uint64</td>
+</tr>
+<tr>
+<td>autor</td>
+<td>name</td>
+</tr>
+<tr>
+<td>creationtime</td>
+<td>time_point</td>
+</tr>
+<tr>
+<td>ipfshash</td>
+<td>string</td>
+</tr>
+<tr>
+<td>ipfshash_filetyp</td>
+<td>string</td>
+</tr>
+<tr>
+<td>ipfshash_thumb</td>
+<td>string</td>
+</tr>
+<tr>
+<td>uploadtext</td>
+<td>string</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>uint8</td>
+</tr>
+<tr>
+<td>token</td>
+<td>int32</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 <div class="flex items-center mt-6 mb-6">
