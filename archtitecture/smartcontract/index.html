@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Cbased Contract</title>
     <meta name="title" content="Cbased Contract">
-    <meta name="description" content="The Cbased contract is the main contract and consists of these functions and tables:" />
+    <meta name="description" content="The Cbased contract is the main contract and consists of functions and tables." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://doc.cubebased.com/archtitecture/smartcontract/">
     <meta property="og:title" content="Cbased Contract">
-    <meta property="og:description" content="The Cbased contract is the main contract and consists of these functions and tables:">
+    <meta property="og:description" content="The Cbased contract is the main contract and consists of functions and tables.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://doc.cubebased.com/archtitecture/smartcontract/">
     <meta property="twitter:title" content="Cbased Contract">
-    <meta property="twitter:description" content="The Cbased contract is the main contract and consists of these functions and tables:">
+    <meta property="twitter:description" content="The Cbased contract is the main contract and consists of functions and tables.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.722791021725" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.722791464873" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722791021725" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722791464873" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722791021725" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722791464873" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -238,7 +238,8 @@
         <span>Cbased Contract</span>
     </h1>
 </doc-anchor-target>
-<p>The Cbased contract is the main contract and consists of these functions and tables:</p>
+<p>The Cbased contract is the main contract and consists of functions and tables.</p>
+<p>You can find a list of all data types <a href="https://eosio.stackexchange.com/questions/1837/list-of-available-datatypes-for-action-parameter">here</a></p>
 <doc-anchor-target id="actions">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#actions">#</doc-anchor-trigger>
@@ -276,13 +277,31 @@ Users who are not activated cannot perform any action in the cbased contract</p>
         <span>banuser</span>
     </h3>
 </doc-anchor-target>
+<p>This action ban and deactive a user for the cbased contract. <strong>This change cannot be undone.</strong> Users can not longer perform any action in the cbased contract.</p>
+<p>Required authorization: cbased</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Parametername</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>name</td>
+</tr>
+</tbody>
+</table>
+</div>
 <doc-anchor-target id="addupload">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#addupload">#</doc-anchor-trigger>
         <span>addupload</span>
     </h3>
 </doc-anchor-target>
-<p>This action add a new upload into the [Upload Table](### uploads).</p>
+<p>This action add a new upload into the <doc-anchor-trigger to="###uploads">Upload Table</doc-anchor-trigger>.</p>
 <p>Required authorization: any active user</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
