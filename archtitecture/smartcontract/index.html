@@ -8,24 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Cbased Contract</title>
     <meta name="title" content="Cbased Contract">
+    <meta name="description" content="The Cbased contract is the main contract and consists of these functions:" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://doc.cubebased.com/archtitecture/smartcontract/">
     <meta property="og:title" content="Cbased Contract">
+    <meta property="og:description" content="The Cbased contract is the main contract and consists of these functions:">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://doc.cubebased.com/archtitecture/smartcontract/">
     <meta property="twitter:title" content="Cbased Contract">
+    <meta property="twitter:description" content="The Cbased contract is the main contract and consists of these functions:">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.715555308807" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.722789811580" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.715555308807" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.722789811580" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.715555308807" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.722789811580" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -235,6 +238,51 @@
         <span>Cbased Contract</span>
     </h1>
 </doc-anchor-target>
+<p>The Cbased contract is the main contract and consists of these functions:</p>
+<doc-anchor-target id="activateuser">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#activateuser">#</doc-anchor-trigger>
+        <span>activateuser</span>
+    </h2>
+</doc-anchor-target>
+<p>This action active a user for the cbased contract.
+Users who are not activated cannot perform any action in the cbased contract</p>
+<p>Required authorization: cbased</p>
+<p>Parameter:
+| name | type  |
+|---|---|
+| username | name |</p>
+<doc-anchor-target id="addcomment">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addcomment">#</doc-anchor-trigger>
+        <span>addcomment</span>
+    </h1>
+</doc-anchor-target>
+<p>This action add a comment to a specific upload</p>
+<p>Required authorization: <any active user></p>
+<p>Parameter:
+| name | type  |
+|---|---|
+| autor | name |
+| text | string |
+| uploadid | uint64 |
+| parentcommentid | uint64 |</p>
+<ul>
+<li>addccomment</li>
+<li>addcooldown</li>
+<li>addtag</li>
+<li>addtruster</li>
+<li>addupload</li>
+<li>banuser</li>
+<li>betruster</li>
+<li>claimrewards</li>
+<li>delupload</li>
+<li>init</li>
+<li>remcooldown</li>
+<li>reportupload</li>
+<li>trustervote</li>
+<li>voteupload</li>
+</ul>
 <doc-anchor-target id="action">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#action">#</doc-anchor-trigger>
