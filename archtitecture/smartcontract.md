@@ -17,6 +17,7 @@ Users who are not activated cannot perform any action in the cbased contract
 Required authorization: cbased
 
 Parameter:
+
 | name | type  |
 |---|---|
 | username | name |
@@ -25,9 +26,24 @@ Parameter:
 
 This action add a comment to a specific upload
 
-Required authorization: <any active user>
+Required authorization: any active user
 
 Parameter:
+
+| name | type  |
+|---|---|
+| autor | name | 
+| text | string | 
+| uploadid | uint64 | 
+
+## addccomment
+
+This action add a comment to a comment.
+
+Required authorization: any active user
+
+Parameter:
+
 | name | type  |
 |---|---|
 | autor | name | 
@@ -35,7 +51,7 @@ Parameter:
 | uploadid | uint64 | 
 | parentcommentid | uint64 |
 
-- addccomment
+
 - addcooldown
 - addtag
 - addtruster
