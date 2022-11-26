@@ -7,44 +7,59 @@ tags: [architecture]
 
 # Cbased Contract
 
-The Cbased contract is the main contract and consists of these functions:
+The Cbased contract is the main contract and consists of these functions and tables:
 
-## activateuser
+## Actions
+
+### activateuser
 
 This action active a user for the cbased contract.
 Users who are not activated cannot perform any action in the cbased contract
 
 Required authorization: cbased
 
-Parameter:
-
-| name | type  |
+| Parametername | type  |
 |---|---|
 | username | name |
 
-#  addcomment
+### banuser
+
+### addupload
+
+This action add a new upload into the [Upload Table](### uploads).
+
+Required authorization: any active user
+
+| Parametername | type |
+|---|---|
+| autor | name | 
+| ipfshash | string | 
+| ipfshash_thumb | string |
+| uploadtext | string |
+| filetyp | string |
+| flag | uint8 |
+
+### delupload
+
+### addcomment
 
 This action add a comment to a specific upload
 
 Required authorization: any active user
 
-Parameter:
-
-| name | type  |
+| Parametername | type |
 |---|---|
 | autor | name | 
 | text | string | 
 | uploadid | uint64 | 
 
-## addccomment
+### addccomment
 
 This action add a comment to a comment.
 
 Required authorization: any active user
 
-Parameter:
-
-| name | type  |
+| Parametername | type |
 |---|---|
 | autor | name | 
 | text | string | 
@@ -52,19 +67,36 @@ Parameter:
 | parentcommentid | uint64 |
 
 
-- addcooldown
-- addtag
-- addtruster
-- addupload
-- banuser
-- betruster
-- claimrewards
-- delupload
-- init
-- remcooldown
-- reportupload
-- trustervote
-- voteupload
+### addtag
+### addtruster
+### betruster
+### claimrewards
 
-## Action
+### addcooldown
+### remcooldown
+
+### trustervote
+### reportupload
+
+### voteupload
+
+### Action
+
+## Tables
+
+
+### uploads
+
+| Parametername | type |
+|---|---|
+| uploadid | uint64 | 
+| autor | name | 
+| creationtime | time_point | 
+| ipfshash | string |
+| ipfshash_filetyp | string |
+| ipfshash_thumb | string |
+| uploadtext | string |
+| flag | uint8 |
+| token | int32 |
+
 
