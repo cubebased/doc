@@ -11,6 +11,8 @@ The Cbased contract is the main contract and consists of functions and tables.
 
 You can find a list of all data types [here](https://eosio.stackexchange.com/questions/1837/list-of-available-datatypes-for-action-parameter)
 
+The order of the parameters is crucial for the integration with the Smart Contract. The order in the table corresponds to the order of the parameters.
+
 ## Actions
 
 ### activateuser
@@ -37,7 +39,7 @@ Required authorization: cbased
 
 ### addupload
 
-This action add a new upload into the [Upload Table](###uploads).
+This action add a new upload into the [Upload Table](#uploads).
 
 Required authorization: any active user
 
@@ -51,6 +53,10 @@ Required authorization: any active user
 | flag | uint8 |
 
 ### delupload
+
+This action delete the selected upload. In addition, all comments and tags will be deleted for this upload.
+
+Required authorization: cbased
 
 ### addcomment
 
@@ -79,6 +85,17 @@ Required authorization: any active user
 
 
 ### addtag
+
+This action add a tag to a upload. This action effects the [Tag Table](#tags) and [withthistag Table](#withthistag). If the transmitted tagtext is also new in a global scope the [Global Tag Table](#globaltags) will be also effected.
+
+Required authorization: any active user
+
+| Parametername | type |
+|---|---|
+| autor | name | 
+| uploadid | uint64 | 
+| text | string |
+
 ### addtruster
 ### betruster
 ### claimrewards
@@ -109,5 +126,32 @@ Required authorization: any active user
 | uploadtext | string |
 | flag | uint8 |
 | token | int32 |
+
+### tags
+
+| Parametername | type |
+|---|---|
+| tagid | uint64 | 
+| text | string |
+| autor | name | 
+| token | int32 | 
+
+
+### globaltags
+
+| Parametername | type |
+|---|---|
+| globaltagid | uint64 | 
+| text | string |
+
+### withthistag
+
+| Parametername | type |
+|---|---|
+| uploadid | uint64 | 
+
+
+
+
 
 
