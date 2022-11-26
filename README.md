@@ -22,7 +22,7 @@ order: 1000
 
 Cubebased is a decentralized media plattform useing [IPFS](https://ipfs.io) and based on [EOS](https://eos.io/). Moderators on the platform are chosen by the community itself. With good content tokens can be earned, which can be exchanged later for real money. The media and the metadata are distributed all over the world and cannot be easily removed by governments and organizations. <b>[Link to Application](https://app.cubebased.com)</b>
 
-<b>You are currently on the documentation page, on this page we will further touch on the rules and technology.</b>
+<b>You are currently on the [documentation page](https://doc.cubebased.com) , on this page we will further touch on the rules and technology.</b>
 
 
 ## Table of content
