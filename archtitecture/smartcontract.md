@@ -7,11 +7,37 @@ tags: [architecture]
 
 # Cbased Contract
 
-The Cbased contract is the main contract and consists of functions and tables.
+The account with the accountname Cbased is the main contract and consists of functions and tables. The order of the parameters is crucial for the integration with the Smart Contract. The developing of the cbased contract is still in process.
 
-You can find a list of all data types [here](https://eosio.stackexchange.com/questions/1837/list-of-available-datatypes-for-action-parameter)
+## Contact Overview & Status: ##
 
-The order of the parameters is crucial for the integration with the Smart Contract. The order in the table corresponds to the order of the parameters.
+| Action_name | [Contract_Status](#Contract_Status)
+|---|---|---|
+| [activateuser](#activateuser) | :icon-tools: |
+| [addccomment](#addccomment) | :icon-tools: |
+| [addcomment](#addcomment) | :icon-tools: |
+| [addcooldown](#addcooldown) | :icon-tools: |
+| [addtag](#addtag) | :icon-tools: |
+| [addtruster](#addtruster) | :icon-tools: |
+| [addupload](#addupload) | :icon-tools: |
+| [banuser](banuser) | :icon-tools: |
+| [betruster](#betruster) | :icon-tools: |
+| [claimrewards](#claimrewards) | :icon-tools: |
+| [delupload](#delupload) | :icon-tools: |
+| [remcooldown](#remcooldown) | :icon-tools: |
+| [reportupload](#reportupload) | :icon-tools: |
+| [trustervote](#trustervote) | :icon-tools: |
+| [voteupload](#voteupload) | :icon-tools: |
+
+
+## Contract_Status
+
+| Level | Status | Descrition |
+|---|---|---|
+| 1 | :icon-issue-draft: | Todo. Developing not started yet |
+| 2 | :icon-tools: | In developing |
+| 3 | :icon-shield-check:  | Developing finished |
+| 4 | :icon-verified: | code security reviewed |
 
 ## Actions
 
@@ -26,17 +52,46 @@ Required authorization: cbased
 |---|---|
 | username | name |
 
-### banuser
+### addccomment
 
-This action ban and deactive a user for the cbased contract. **This change cannot be undone.** Users can not longer perform any action in the cbased contract.
+This action add a comment to a comment.
 
-Required authorization: cbased
+Required authorization: any active user
 
-| Parametername | type  |
+| Parametername | type |
 |---|---|
-| username | name |
+| autor | name | 
+| text | string | 
+| uploadid | uint64 | 
+| parentcommentid | uint64 |
+
+### addcomment
+
+This action add a comment to a specific upload
+
+Required authorization: any active user
+
+| Parametername | type |
+|---|---|
+| autor | name | 
+| text | string | 
+| uploadid | uint64 |
 
 
+### addcooldown
+### addtag
+
+This action add a tag to a upload. This action effects the [Tag Table](#tags) and [withthistag Table](#withthistag). If the transmitted tagtext is also new in a global scope the [Global Tag Table](#globaltags) will be also effected.
+
+Required authorization: any active user
+
+| Parametername | type |
+|---|---|
+| autor | name | 
+| uploadid | uint64 | 
+| text | string |
+
+### addtruster
 ### addupload
 
 This action add a new upload into the [Upload Table](#uploads).
@@ -52,63 +107,20 @@ Required authorization: any active user
 | filetyp | string |
 | flag | uint8 |
 
+### banuser
+### betruster
+### claimrewards
 ### delupload
 
 This action delete the selected upload. In addition, all comments and tags will be deleted for this upload.
 
 Required authorization: cbased
 
-### addcomment
-
-This action add a comment to a specific upload
-
-Required authorization: any active user
-
-| Parametername | type |
-|---|---|
-| autor | name | 
-| text | string | 
-| uploadid | uint64 | 
-
-### addccomment
-
-This action add a comment to a comment.
-
-Required authorization: any active user
-
-| Parametername | type |
-|---|---|
-| autor | name | 
-| text | string | 
-| uploadid | uint64 | 
-| parentcommentid | uint64 |
-
-
-### addtag
-
-This action add a tag to a upload. This action effects the [Tag Table](#tags) and [withthistag Table](#withthistag). If the transmitted tagtext is also new in a global scope the [Global Tag Table](#globaltags) will be also effected.
-
-Required authorization: any active user
-
-| Parametername | type |
-|---|---|
-| autor | name | 
-| uploadid | uint64 | 
-| text | string |
-
-### addtruster
-### betruster
-### claimrewards
-
-### addcooldown
 ### remcooldown
-
-### trustervote
 ### reportupload
-
+### trustervote
 ### voteupload
 
-### Action
 
 ## Tables
 
@@ -154,4 +166,4 @@ Required authorization: any active user
 
 
 
-
+You can find a list of all data types [here](https://eosio.stackexchange.com/questions/1837/list-of-available-datatypes-for-action-parameter)
