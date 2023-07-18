@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.743000171927">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.743004258488">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.3.743000171927" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.743004258488" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.743000171927" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.743004258488" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.743000171927" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.743004258488" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -257,10 +257,10 @@
     </h1>
 </doc-anchor-target>
 <p>The account with the accountname Cbased is the main contract and consists of functions and tables. The order of the parameters is crucial for the integration with the Smart Contract. The developing of the cbased contract is still in process.</p>
-<doc-anchor-target id="structs">
+<doc-anchor-target id="actions">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#structs">#</doc-anchor-trigger>
-        <span>Structs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#actions">#</doc-anchor-trigger>
+        <span>Actions</span>
     </h2>
 </doc-anchor-target>
 <doc-anchor-target id="activateuser">
@@ -269,8 +269,9 @@
         <span>activateuser</span>
     </h3>
 </doc-anchor-target>
+<p>Type: activateuser</p>
 <ul>
-<li><strong>username</strong>: <code v-pre>name</code></li>
+<li><strong>username</strong> (name)</li>
 </ul>
 <doc-anchor-target id="addccomment">
     <h3>
@@ -278,11 +279,12 @@
         <span>addccomment</span>
     </h3>
 </doc-anchor-target>
+<p>Type: addccomment</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>text</strong>: <code v-pre>string</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>parentcommentid</strong>: <code v-pre>uint64</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>text</strong> (string)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>parentcommentid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="addcomment">
     <h3>
@@ -290,10 +292,11 @@
         <span>addcomment</span>
     </h3>
 </doc-anchor-target>
+<p>Type: addcomment</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>text</strong>: <code v-pre>string</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>text</strong> (string)</li>
+<li><strong>uploadid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="addcooldown">
     <h3>
@@ -301,9 +304,10 @@
         <span>addcooldown</span>
     </h3>
 </doc-anchor-target>
+<p>Type: addcooldown</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>action</strong>: <code v-pre>uint16</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>action</strong> (uint16)</li>
 </ul>
 <doc-anchor-target id="addtag">
     <h3>
@@ -311,10 +315,11 @@
         <span>addtag</span>
     </h3>
 </doc-anchor-target>
+<p>Type: addtag</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>text</strong>: <code v-pre>string</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>text</strong> (string)</li>
 </ul>
 <doc-anchor-target id="addtruster">
     <h3>
@@ -322,8 +327,9 @@
         <span>addtruster</span>
     </h3>
 </doc-anchor-target>
+<p>Type: addtruster</p>
 <ul>
-<li><strong>trustername</strong>: <code v-pre>name</code></li>
+<li><strong>trustername</strong> (name)</li>
 </ul>
 <doc-anchor-target id="addupload">
     <h3>
@@ -331,27 +337,14 @@
         <span>addupload</span>
     </h3>
 </doc-anchor-target>
+<p>Type: addupload</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>ipfshash</strong>: <code v-pre>string</code></li>
-<li><strong>ipfshash_thumb</strong>: <code v-pre>string</code></li>
-<li><strong>uploadtext</strong>: <code v-pre>string</code></li>
-<li><strong>filetyp</strong>: <code v-pre>string</code></li>
-<li><strong>flag</strong>: <code v-pre>uint8</code></li>
-</ul>
-<doc-anchor-target id="badges">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#badges">#</doc-anchor-trigger>
-        <span>badges</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>badgeid</strong>: <code v-pre>uint64</code></li>
-<li><strong>badgetext</strong>: <code v-pre>string</code></li>
-<li><strong>creationtime</strong>: <code v-pre>time_point</code></li>
-<li><strong>ipfshash</strong>: <code v-pre>string</code></li>
-<li><strong>ipfshash_thumb</strong>: <code v-pre>string</code></li>
-<li><strong>filetyp</strong>: <code v-pre>string</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>ipfshash</strong> (string)</li>
+<li><strong>ipfshash_thumb</strong> (string)</li>
+<li><strong>uploadtext</strong> (string)</li>
+<li><strong>filetyp</strong> (string)</li>
+<li><strong>flag</strong> (uint8)</li>
 </ul>
 <doc-anchor-target id="banuser">
     <h3>
@@ -359,8 +352,9 @@
         <span>banuser</span>
     </h3>
 </doc-anchor-target>
+<p>Type: banuser</p>
 <ul>
-<li><strong>username</strong>: <code v-pre>name</code></li>
+<li><strong>username</strong> (name)</li>
 </ul>
 <doc-anchor-target id="betruster">
     <h3>
@@ -368,9 +362,10 @@
         <span>betruster</span>
     </h3>
 </doc-anchor-target>
+<p>Type: betruster</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>applicationtimeinweek</strong>: <code v-pre>uint8</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>applicationtimeinweek</strong> (uint8)</li>
 </ul>
 <doc-anchor-target id="claimrewards">
     <h3>
@@ -378,49 +373,11 @@
         <span>claimrewards</span>
     </h3>
 </doc-anchor-target>
+<p>Type: claimrewards</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>symbol</strong>: <code v-pre>string</code></li>
-<li><strong>value</strong>: <code v-pre>uint64</code></li>
-</ul>
-<doc-anchor-target id="comments">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#comments">#</doc-anchor-trigger>
-        <span>comments</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>commentid</strong>: <code v-pre>uint64</code></li>
-<li><strong>parentcommentid</strong>: <code v-pre>uint64</code></li>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>creationtime</strong>: <code v-pre>time_point</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>commenttext</strong>: <code v-pre>string</code></li>
-<li><strong>token</strong>: <code v-pre>int32</code></li>
-</ul>
-<doc-anchor-target id="configs">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configs">#</doc-anchor-trigger>
-        <span>configs</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>configid</strong>: <code v-pre>uint64</code></li>
-<li><strong>uintvalue</strong>: <code v-pre>uint64</code></li>
-<li><strong>stringvalue</strong>: <code v-pre>string</code></li>
-</ul>
-<doc-anchor-target id="cooldown">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cooldown">#</doc-anchor-trigger>
-        <span>cooldown</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>cooldownid</strong>: <code v-pre>uint64</code></li>
-<li><strong>user</strong>: <code v-pre>name</code></li>
-<li><strong>action</strong>: <code v-pre>uint16</code></li>
-<li><strong>counter</strong>: <code v-pre>uint16</code></li>
-<li><strong>lastaction</strong>: <code v-pre>time_point</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>symbol</strong> (string)</li>
+<li><strong>value</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="delupload">
     <h3>
@@ -428,18 +385,9 @@
         <span>delupload</span>
     </h3>
 </doc-anchor-target>
+<p>Type: delupload</p>
 <ul>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-</ul>
-<doc-anchor-target id="globaltags">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#globaltags">#</doc-anchor-trigger>
-        <span>globaltags</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>globaltagid</strong>: <code v-pre>uint64</code></li>
-<li><strong>text</strong>: <code v-pre>string</code></li>
+<li><strong>uploadid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="init">
     <h3>
@@ -447,8 +395,9 @@
         <span>init</span>
     </h3>
 </doc-anchor-target>
+<p>Type: init</p>
 <ul>
-<li><strong>value</strong>: <code v-pre>uint16</code></li>
+<li><strong>value</strong> (uint16)</li>
 </ul>
 <doc-anchor-target id="remcooldown">
     <h3>
@@ -456,24 +405,10 @@
         <span>remcooldown</span>
     </h3>
 </doc-anchor-target>
+<p>Type: remcooldown</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>action</strong>: <code v-pre>uint16</code></li>
-</ul>
-<doc-anchor-target id="report">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#report">#</doc-anchor-trigger>
-        <span>report</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>reportername</strong>: <code v-pre>uint64</code></li>
-<li><strong>violatedrule</strong>: <code v-pre>uint8</code></li>
-<li><strong>reporttime</strong>: <code v-pre>time_point</code></li>
-<li><strong>numberoftrusters</strong>: <code v-pre>uint8</code></li>
-<li><strong>outstandingvotes</strong>: <code v-pre>uint8</code></li>
-<li><strong>vote_weight</strong>: <code v-pre>int8</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>action</strong> (uint16)</li>
 </ul>
 <doc-anchor-target id="reportupload">
     <h3>
@@ -481,44 +416,11 @@
         <span>reportupload</span>
     </h3>
 </doc-anchor-target>
+<p>Type: reportupload</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>violatedrule</strong>: <code v-pre>uint8</code></li>
-</ul>
-<doc-anchor-target id="reportvote">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reportvote">#</doc-anchor-trigger>
-        <span>reportvote</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>trustername</strong>: <code v-pre>uint64</code></li>
-<li><strong>vote</strong>: <code v-pre>int8</code></li>
-</ul>
-<doc-anchor-target id="tags">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tags">#</doc-anchor-trigger>
-        <span>tags</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>tagid</strong>: <code v-pre>uint64</code></li>
-<li><strong>text</strong>: <code v-pre>string</code></li>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>token</strong>: <code v-pre>int32</code></li>
-</ul>
-<doc-anchor-target id="truster">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#truster">#</doc-anchor-trigger>
-        <span>truster</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>trustername</strong>: <code v-pre>uint64</code></li>
-<li><strong>karma</strong>: <code v-pre>uint16</code></li>
-<li><strong>status</strong>: <code v-pre>uint8</code></li>
-<li><strong>election_date</strong>: <code v-pre>time_point</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>violatedrule</strong> (uint8)</li>
 </ul>
 <doc-anchor-target id="trustervote">
     <h3>
@@ -526,96 +428,11 @@
         <span>trustervote</span>
     </h3>
 </doc-anchor-target>
+<p>Type: trustervote</p>
 <ul>
-<li><strong>trustername</strong>: <code v-pre>name</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>vote</strong>: <code v-pre>int8</code></li>
-</ul>
-<doc-anchor-target id="uploads">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uploads">#</doc-anchor-trigger>
-        <span>uploads</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>creationtime</strong>: <code v-pre>time_point</code></li>
-<li><strong>ipfshash</strong>: <code v-pre>string</code></li>
-<li><strong>ipfshash_filetyp</strong>: <code v-pre>string</code></li>
-<li><strong>ipfshash_thumb</strong>: <code v-pre>string</code></li>
-<li><strong>uploadtext</strong>: <code v-pre>string</code></li>
-<li><strong>flag</strong>: <code v-pre>uint8</code></li>
-<li><strong>token</strong>: <code v-pre>int32</code></li>
-</ul>
-<doc-anchor-target id="userbadge">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#userbadge">#</doc-anchor-trigger>
-        <span>userbadge</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>userbadgeid</strong>: <code v-pre>uint64</code></li>
-<li><strong>user</strong>: <code v-pre>name</code></li>
-<li><strong>badgeid</strong>: <code v-pre>uint64</code></li>
-<li><strong>handover</strong>: <code v-pre>time_point</code></li>
-</ul>
-<doc-anchor-target id="userconfig">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#userconfig">#</doc-anchor-trigger>
-        <span>userconfig</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>configid</strong>: <code v-pre>uint64</code></li>
-<li><strong>active</strong>: <code v-pre>uint8</code></li>
-<li><strong>last_act_reset</strong>: <code v-pre>time_point</code></li>
-<li><strong>act_token</strong>: <code v-pre>uint16</code></li>
-<li><strong>last_claim_time</strong>: <code v-pre>time_point</code></li>
-</ul>
-<doc-anchor-target id="userfavorite">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#userfavorite">#</doc-anchor-trigger>
-        <span>userfavorite</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>id</strong>: <code v-pre>uint64</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-</ul>
-<doc-anchor-target id="useruploads">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#useruploads">#</doc-anchor-trigger>
-        <span>useruploads</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>id</strong>: <code v-pre>uint64</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-</ul>
-<doc-anchor-target id="votecomments">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#votecomments">#</doc-anchor-trigger>
-        <span>votecomments</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>votecommentsid</strong>: <code v-pre>uint64</code></li>
-<li><strong>commentsid</strong>: <code v-pre>uint64</code></li>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>vote</strong>: <code v-pre>int8</code></li>
-</ul>
-<doc-anchor-target id="votetags">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#votetags">#</doc-anchor-trigger>
-        <span>votetags</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>votetagsid</strong>: <code v-pre>uint64</code></li>
-<li><strong>tagid</strong>: <code v-pre>uint64</code></li>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>vote</strong>: <code v-pre>int8</code></li>
+<li><strong>trustername</strong> (name)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>vote</strong> (int8)</li>
 </ul>
 <doc-anchor-target id="voteupload">
     <h3>
@@ -623,10 +440,231 @@
         <span>voteupload</span>
     </h3>
 </doc-anchor-target>
+<p>Type: voteupload</p>
 <ul>
-<li><strong>autor</strong>: <code v-pre>name</code></li>
-<li><strong>vote</strong>: <code v-pre>int8</code></li>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>vote</strong> (int8)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+</ul>
+<doc-anchor-target id="tables">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tables">#</doc-anchor-trigger>
+        <span>Tables</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="badges">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#badges">#</doc-anchor-trigger>
+        <span>badges</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: badges</p>
+<ul>
+<li><strong>badgeid</strong> (uint64)</li>
+<li><strong>badgetext</strong> (string)</li>
+<li><strong>creationtime</strong> (time_point)</li>
+<li><strong>ipfshash</strong> (string)</li>
+<li><strong>ipfshash_thumb</strong> (string)</li>
+<li><strong>filetyp</strong> (string)</li>
+</ul>
+<doc-anchor-target id="comments">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#comments">#</doc-anchor-trigger>
+        <span>comments</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: comments</p>
+<ul>
+<li><strong>commentid</strong> (uint64)</li>
+<li><strong>parentcommentid</strong> (uint64)</li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>creationtime</strong> (time_point)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>commenttext</strong> (string)</li>
+<li><strong>token</strong> (int32)</li>
+</ul>
+<doc-anchor-target id="configs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configs">#</doc-anchor-trigger>
+        <span>configs</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: configs</p>
+<ul>
+<li><strong>configid</strong> (uint64)</li>
+<li><strong>uintvalue</strong> (uint64)</li>
+<li><strong>stringvalue</strong> (string)</li>
+</ul>
+<doc-anchor-target id="cooldown">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cooldown">#</doc-anchor-trigger>
+        <span>cooldown</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: cooldown</p>
+<ul>
+<li><strong>cooldownid</strong> (uint64)</li>
+<li><strong>user</strong> (name)</li>
+<li><strong>action</strong> (uint16)</li>
+<li><strong>counter</strong> (uint16)</li>
+<li><strong>lastaction</strong> (time_point)</li>
+</ul>
+<doc-anchor-target id="globaltags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#globaltags">#</doc-anchor-trigger>
+        <span>globaltags</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: globaltags</p>
+<ul>
+<li><strong>globaltagid</strong> (uint64)</li>
+<li><strong>text</strong> (string)</li>
+</ul>
+<doc-anchor-target id="reports">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reports">#</doc-anchor-trigger>
+        <span>reports</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: report</p>
+<ul>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>reportername</strong> (uint64)</li>
+<li><strong>violatedrule</strong> (uint8)</li>
+<li><strong>reporttime</strong> (time_point)</li>
+<li><strong>numberoftrusters</strong> (uint8)</li>
+<li><strong>outstandingvotes</strong> (uint8)</li>
+<li><strong>vote_weight</strong> (int8)</li>
+</ul>
+<doc-anchor-target id="reportvotes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reportvotes">#</doc-anchor-trigger>
+        <span>reportvotes</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: reportvote</p>
+<ul>
+<li><strong>trustername</strong> (uint64)</li>
+<li><strong>vote</strong> (int8)</li>
+</ul>
+<doc-anchor-target id="tags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tags">#</doc-anchor-trigger>
+        <span>tags</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: tags</p>
+<ul>
+<li><strong>tagid</strong> (uint64)</li>
+<li><strong>text</strong> (string)</li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>token</strong> (int32)</li>
+</ul>
+<doc-anchor-target id="trusters">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#trusters">#</doc-anchor-trigger>
+        <span>trusters</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: truster</p>
+<ul>
+<li><strong>trustername</strong> (uint64)</li>
+<li><strong>karma</strong> (uint16)</li>
+<li><strong>status</strong> (uint8)</li>
+<li><strong>election_date</strong> (time_point)</li>
+</ul>
+<doc-anchor-target id="uploads">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uploads">#</doc-anchor-trigger>
+        <span>uploads</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: uploads</p>
+<ul>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>creationtime</strong> (time_point)</li>
+<li><strong>ipfshash</strong> (string)</li>
+<li><strong>ipfshash_filetyp</strong> (string)</li>
+<li><strong>ipfshash_thumb</strong> (string)</li>
+<li><strong>uploadtext</strong> (string)</li>
+<li><strong>flag</strong> (uint8)</li>
+<li><strong>token</strong> (int32)</li>
+</ul>
+<doc-anchor-target id="userbadge">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#userbadge">#</doc-anchor-trigger>
+        <span>userbadge</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: userbadge</p>
+<ul>
+<li><strong>userbadgeid</strong> (uint64)</li>
+<li><strong>user</strong> (name)</li>
+<li><strong>badgeid</strong> (uint64)</li>
+<li><strong>handover</strong> (time_point)</li>
+</ul>
+<doc-anchor-target id="userconfig">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#userconfig">#</doc-anchor-trigger>
+        <span>userconfig</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: userconfig</p>
+<ul>
+<li><strong>configid</strong> (uint64)</li>
+<li><strong>active</strong> (uint8)</li>
+<li><strong>last_act_reset</strong> (time_point)</li>
+<li><strong>act_token</strong> (uint16)</li>
+<li><strong>last_claim_time</strong> (time_point)</li>
+</ul>
+<doc-anchor-target id="userfavorite">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#userfavorite">#</doc-anchor-trigger>
+        <span>userfavorite</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: userfavorite</p>
+<ul>
+<li><strong>id</strong> (uint64)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+</ul>
+<doc-anchor-target id="useruploads">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#useruploads">#</doc-anchor-trigger>
+        <span>useruploads</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: useruploads</p>
+<ul>
+<li><strong>id</strong> (uint64)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+</ul>
+<doc-anchor-target id="votecomments">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#votecomments">#</doc-anchor-trigger>
+        <span>votecomments</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: votecomments</p>
+<ul>
+<li><strong>votecommentsid</strong> (uint64)</li>
+<li><strong>commentsid</strong> (uint64)</li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>vote</strong> (int8)</li>
+</ul>
+<doc-anchor-target id="votetags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#votetags">#</doc-anchor-trigger>
+        <span>votetags</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: votetags</p>
+<ul>
+<li><strong>votetagsid</strong> (uint64)</li>
+<li><strong>tagid</strong> (uint64)</li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>vote</strong> (int8)</li>
 </ul>
 <doc-anchor-target id="voteuploads">
     <h3>
@@ -634,9 +672,10 @@
         <span>voteuploads</span>
     </h3>
 </doc-anchor-target>
+<p>Type: voteuploads</p>
 <ul>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
-<li><strong>vote</strong>: <code v-pre>int8</code></li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>vote</strong> (int8)</li>
 </ul>
 <doc-anchor-target id="withthistag">
     <h3>
@@ -644,225 +683,10 @@
         <span>withthistag</span>
     </h3>
 </doc-anchor-target>
+<p>Type: withthistag</p>
 <ul>
-<li><strong>uploadid</strong>: <code v-pre>uint64</code></li>
+<li><strong>uploadid</strong> (uint64)</li>
 </ul>
-<doc-anchor-target id="actions">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#actions">#</doc-anchor-trigger>
-        <span>Actions</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="activateuser-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#activateuser-1">#</doc-anchor-trigger>
-        <span>activateuser</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="addccomment-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addccomment-1">#</doc-anchor-trigger>
-        <span>addccomment</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="addcomment-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addcomment-1">#</doc-anchor-trigger>
-        <span>addcomment</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="addcooldown-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addcooldown-1">#</doc-anchor-trigger>
-        <span>addcooldown</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="addtag-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addtag-1">#</doc-anchor-trigger>
-        <span>addtag</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="addtruster-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addtruster-1">#</doc-anchor-trigger>
-        <span>addtruster</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="addupload-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#addupload-1">#</doc-anchor-trigger>
-        <span>addupload</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="banuser-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#banuser-1">#</doc-anchor-trigger>
-        <span>banuser</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="betruster-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#betruster-1">#</doc-anchor-trigger>
-        <span>betruster</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="claimrewards-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#claimrewards-1">#</doc-anchor-trigger>
-        <span>claimrewards</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="delupload-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delupload-1">#</doc-anchor-trigger>
-        <span>delupload</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="init-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#init-1">#</doc-anchor-trigger>
-        <span>init</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="remcooldown-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#remcooldown-1">#</doc-anchor-trigger>
-        <span>remcooldown</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="reportupload-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reportupload-1">#</doc-anchor-trigger>
-        <span>reportupload</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="trustervote-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#trustervote-1">#</doc-anchor-trigger>
-        <span>trustervote</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="voteupload-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#voteupload-1">#</doc-anchor-trigger>
-        <span>voteupload</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="tables">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tables">#</doc-anchor-trigger>
-        <span>Tables</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="badges-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#badges-1">#</doc-anchor-trigger>
-        <span>badges</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="comments-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#comments-1">#</doc-anchor-trigger>
-        <span>comments</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="configs-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configs-1">#</doc-anchor-trigger>
-        <span>configs</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="cooldown-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cooldown-1">#</doc-anchor-trigger>
-        <span>cooldown</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="globaltags-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#globaltags-1">#</doc-anchor-trigger>
-        <span>globaltags</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="reports">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reports">#</doc-anchor-trigger>
-        <span>reports</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="reportvotes">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reportvotes">#</doc-anchor-trigger>
-        <span>reportvotes</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="tags-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tags-1">#</doc-anchor-trigger>
-        <span>tags</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="trusters">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#trusters">#</doc-anchor-trigger>
-        <span>trusters</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="uploads-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uploads-1">#</doc-anchor-trigger>
-        <span>uploads</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="userbadge-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#userbadge-1">#</doc-anchor-trigger>
-        <span>userbadge</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="userconfig-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#userconfig-1">#</doc-anchor-trigger>
-        <span>userconfig</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="userfavorite-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#userfavorite-1">#</doc-anchor-trigger>
-        <span>userfavorite</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="useruploads-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#useruploads-1">#</doc-anchor-trigger>
-        <span>useruploads</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="votecomments-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#votecomments-1">#</doc-anchor-trigger>
-        <span>votecomments</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="votetags-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#votetags-1">#</doc-anchor-trigger>
-        <span>votetags</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="voteuploads-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#voteuploads-1">#</doc-anchor-trigger>
-        <span>voteuploads</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="withthistag-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#withthistag-1">#</doc-anchor-trigger>
-        <span>withthistag</span>
-    </h3>
-</doc-anchor-target>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
