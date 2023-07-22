@@ -199,6 +199,8 @@ Type: uploads
   - **ipfshash_thumb** (string)
   - **uploadtext** (string)
   - **flag** (uint8)
+  - **numofcomments** (uint16)
+  - **numoffavorites** (uint16)
   - **token** (int32)
 
 ### userbadge
