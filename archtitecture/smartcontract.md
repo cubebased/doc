@@ -34,6 +34,12 @@ Type: addcooldown
   - **autor** (name)
   - **action** (uint16)
 
+### addfavorite
+Type: addfavorite
+
+  - **autor** (name)
+  - **uploadid** (uint64)
+
 ### addtag
 Type: addtag
 
@@ -73,6 +79,12 @@ Type: claimrewards
   - **autor** (name)
   - **symbol** (string)
   - **value** (uint64)
+
+### delfavorite
+Type: delfavorite
+
+  - **autor** (name)
+  - **uploadid** (uint64)
 
 ### delupload
 Type: delupload
