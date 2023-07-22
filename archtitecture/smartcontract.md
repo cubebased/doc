@@ -235,7 +235,6 @@ Type: userconfig
 ### userfavorite
 Type: userfavorite
 
-  - **id** (uint64)
   - **uploadid** (uint64)
 
 ### useruploads
