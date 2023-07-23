@@ -18,7 +18,6 @@ Violation will result in **immediate and permanent exclusion**.
 4. No phishing, physically harm or trying trick users.
 5. Spreading viruses or other malware.
 
-# Changeable rules
 Violation of these rules will result in punishment, but does not result in permanent exclusion.
 
 6. Repost of content in short intervals (Spamming).
