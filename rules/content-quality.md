@@ -1,5 +1,5 @@
 ---
-label: Rules
+label: Content Quality
 order: 95
 icon: image
 tags: [content, rules, quality]
