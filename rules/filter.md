@@ -1,6 +1,7 @@
 ---
 label: Filter like SFW / NSFW / NSFL
 order: 70
+icon: git-merge-queue
 tags: [ethics, filter, sfw, nsfw, nsfl]
 ---
 
@@ -14,4 +15,4 @@ Content in this category contains porn and slightly offensive stuff.
 
 # Not Save For Live (NSFL)
 
-Content in this category contains violence, disturbing and nasty stuff, anything where people get hurt. The content may be disturbing to some people and should not be consumed by minors or people with a weak mental state.
+Content in this category contains violence, disturbing and nasty stuff, anything where people get hurt. The content may be disturbing to some people and should not be consumed by minors or people with a weak or unstable mental state.
