@@ -40,6 +40,12 @@ Type: addfavorite
   - **autor** (name)
   - **uploadid** (uint64)
 
+### addfavotag
+Type: addfavotag
+
+  - **autor** (name)
+  - **globaltagid** (uint64)
+
 ### addtag
 Type: addtag
 
@@ -80,11 +86,23 @@ Type: claimrewards
   - **symbol** (string)
   - **value** (uint64)
 
+### deldm
+Type: deldm
+
+  - **autor** (name)
+  - **dmid** (uint64)
+
 ### delfavorite
 Type: delfavorite
 
   - **autor** (name)
   - **uploadid** (uint64)
+
+### delfavotag
+Type: delfavotag
+
+  - **autor** (name)
+  - **globaltagid** (uint64)
 
 ### delupload
 Type: delupload
@@ -108,6 +126,13 @@ Type: reportupload
   - **autor** (name)
   - **uploadid** (uint64)
   - **violatedrule** (uint8)
+
+### senddm
+Type: senddm
+
+  - **from** (name)
+  - **to** (name)
+  - **message** (string)
 
 ### trustervote
 Type: trustervote
@@ -161,11 +186,28 @@ Type: cooldown
   - **counter** (uint16)
   - **lastaction** (time_point)
 
+### dms
+Type: dm
+
+  - **messageid** (uint64)
+  - **creationtime** (time_point)
+  - **autor** (name)
+  - **messagetext** (string)
+
 ### globaltags
 Type: globaltags
 
   - **globaltagid** (uint64)
+  - **numoffavorites** (uint32)
   - **text** (string)
+
+### notifys
+Type: notify
+
+  - **notificationid** (uint64)
+  - **creationtime** (time_point)
+  - **type** (uint16)
+  - **notificationtext** (string)
 
 ### reports
 Type: report
@@ -211,8 +253,8 @@ Type: uploads
   - **ipfshash_thumb** (string)
   - **uploadtext** (string)
   - **flag** (uint8)
-  - **numofcomments** (uint16)
-  - **numoffavorites** (uint16)
+  - **numofcomments** (uint32)
+  - **numoffavorites** (uint32)
   - **token** (int32)
 
 ### userbadge
@@ -237,8 +279,13 @@ Type: userfavorite
 
   - **uploadid** (uint64)
 
+### userfavotags
+Type: userfavotag
+
+  - **globaltagid** (uint64)
+
 ### useruploads
-Type: useruploads
+Type: userupload
 
   - **id** (uint64)
   - **uploadid** (uint64)
