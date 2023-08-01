@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743736923712">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.744187737541">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.1.0.743736923712" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.1.0.744187737541" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743736923712" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.744187737541" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743736923712" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.744187737541" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -318,6 +318,17 @@
 <li><strong>autor</strong> (name)</li>
 <li><strong>uploadid</strong> (uint64)</li>
 </ul>
+<doc-anchor-target id="addfavotag">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#addfavotag">#</doc-anchor-trigger>
+        <span>addfavotag</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: addfavotag</p>
+<ul>
+<li><strong>autor</strong> (name)</li>
+<li><strong>globaltagid</strong> (uint64)</li>
+</ul>
 <doc-anchor-target id="addtag">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#addtag">#</doc-anchor-trigger>
@@ -388,6 +399,17 @@
 <li><strong>symbol</strong> (string)</li>
 <li><strong>value</strong> (uint64)</li>
 </ul>
+<doc-anchor-target id="deldm">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#deldm">#</doc-anchor-trigger>
+        <span>deldm</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: deldm</p>
+<ul>
+<li><strong>autor</strong> (name)</li>
+<li><strong>dmid</strong> (uint64)</li>
+</ul>
 <doc-anchor-target id="delfavorite">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#delfavorite">#</doc-anchor-trigger>
@@ -398,6 +420,17 @@
 <ul>
 <li><strong>autor</strong> (name)</li>
 <li><strong>uploadid</strong> (uint64)</li>
+</ul>
+<doc-anchor-target id="delfavotag">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#delfavotag">#</doc-anchor-trigger>
+        <span>delfavotag</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: delfavotag</p>
+<ul>
+<li><strong>autor</strong> (name)</li>
+<li><strong>globaltagid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="delupload">
     <h3>
@@ -441,6 +474,18 @@
 <li><strong>autor</strong> (name)</li>
 <li><strong>uploadid</strong> (uint64)</li>
 <li><strong>violatedrule</strong> (uint8)</li>
+</ul>
+<doc-anchor-target id="senddm">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#senddm">#</doc-anchor-trigger>
+        <span>senddm</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: senddm</p>
+<ul>
+<li><strong>from</strong> (name)</li>
+<li><strong>to</strong> (name)</li>
+<li><strong>message</strong> (string)</li>
 </ul>
 <doc-anchor-target id="trustervote">
     <h3>
@@ -529,6 +574,19 @@
 <li><strong>counter</strong> (uint16)</li>
 <li><strong>lastaction</strong> (time_point)</li>
 </ul>
+<doc-anchor-target id="dms">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dms">#</doc-anchor-trigger>
+        <span>dms</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: dm</p>
+<ul>
+<li><strong>messageid</strong> (uint64)</li>
+<li><strong>creationtime</strong> (time_point)</li>
+<li><strong>autor</strong> (name)</li>
+<li><strong>messagetext</strong> (string)</li>
+</ul>
 <doc-anchor-target id="globaltags">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#globaltags">#</doc-anchor-trigger>
@@ -538,7 +596,21 @@
 <p>Type: globaltags</p>
 <ul>
 <li><strong>globaltagid</strong> (uint64)</li>
+<li><strong>numoffavorites</strong> (uint32)</li>
 <li><strong>text</strong> (string)</li>
+</ul>
+<doc-anchor-target id="notifys">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#notifys">#</doc-anchor-trigger>
+        <span>notifys</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: notify</p>
+<ul>
+<li><strong>notificationid</strong> (uint64)</li>
+<li><strong>creationtime</strong> (time_point)</li>
+<li><strong>type</strong> (uint16)</li>
+<li><strong>notificationtext</strong> (string)</li>
 </ul>
 <doc-anchor-target id="reports">
     <h3>
@@ -609,8 +681,8 @@
 <li><strong>ipfshash_thumb</strong> (string)</li>
 <li><strong>uploadtext</strong> (string)</li>
 <li><strong>flag</strong> (uint8)</li>
-<li><strong>numofcomments</strong> (uint16)</li>
-<li><strong>numoffavorites</strong> (uint16)</li>
+<li><strong>numofcomments</strong> (uint32)</li>
+<li><strong>numoffavorites</strong> (uint32)</li>
 <li><strong>token</strong> (int32)</li>
 </ul>
 <doc-anchor-target id="userbadge">
@@ -650,13 +722,23 @@
 <ul>
 <li><strong>uploadid</strong> (uint64)</li>
 </ul>
+<doc-anchor-target id="userfavotags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#userfavotags">#</doc-anchor-trigger>
+        <span>userfavotags</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: userfavotag</p>
+<ul>
+<li><strong>globaltagid</strong> (uint64)</li>
+</ul>
 <doc-anchor-target id="useruploads">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#useruploads">#</doc-anchor-trigger>
         <span>useruploads</span>
     </h3>
 </doc-anchor-target>
-<p>Type: useruploads</p>
+<p>Type: userupload</p>
 <ul>
 <li><strong>id</strong> (uint64)</li>
 <li><strong>uploadid</strong> (uint64)</li>
