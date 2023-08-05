@@ -20,6 +20,7 @@ Type: addccomment
   - **text** (string)
   - **uploadid** (uint64)
   - **parentcommentid** (uint64)
+  - **language** (string)
 
 ### addcomment
 Type: addcomment
@@ -27,6 +28,7 @@ Type: addcomment
   - **autor** (name)
   - **text** (string)
   - **uploadid** (uint64)
+  - **language** (string)
 
 ### addcooldown
 Type: addcooldown
@@ -65,6 +67,7 @@ Type: addupload
   - **ipfshash** (string)
   - **ipfshash_thumb** (string)
   - **uploadtext** (string)
+  - **language** (string)
   - **filetyp** (string)
   - **flag** (uint8)
 
@@ -166,7 +169,7 @@ Type: comments
   - **parentcommentid** (uint64)
   - **autor** (name)
   - **creationtime** (time_point)
-  - **uploadid** (uint64)
+  - **language** (string)
   - **commenttext** (string)
   - **token** (int32)
 
@@ -234,6 +237,12 @@ Type: tags
   - **autor** (name)
   - **token** (int32)
 
+### trends
+Type: trend
+
+  - **uploadid** (uint64)
+  - **creationtime** (time_point)
+
 ### trusters
 Type: truster
 
@@ -252,10 +261,13 @@ Type: uploads
   - **ipfshash_filetyp** (string)
   - **ipfshash_thumb** (string)
   - **uploadtext** (string)
+  - **language** (string)
   - **flag** (uint8)
   - **numofcomments** (uint32)
   - **numoffavorites** (uint32)
   - **token** (int32)
+  - **up** (uint32)
+  - **down** (uint32)
 
 ### userbadge
 Type: userbadge
@@ -278,6 +290,7 @@ Type: userconfig
 Type: userfavorite
 
   - **uploadid** (uint64)
+  - **creationtime** (time_point)
 
 ### userfavotags
 Type: userfavotag
