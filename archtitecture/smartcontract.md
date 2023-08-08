@@ -201,7 +201,7 @@ Type: dm
 Type: globaltags
 
   - **globaltagid** (uint64)
-  - **numoffavorites** (uint32)
+  - **numoffavorites** (uint64)
   - **text** (string)
 
 ### notifys
