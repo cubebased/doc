@@ -240,6 +240,7 @@ Type: tags
 ### trends
 Type: trend
 
+  - **trendid** (uint64)
   - **uploadid** (uint64)
   - **creationtime** (time_point)
 
@@ -268,6 +269,7 @@ Type: uploads
   - **token** (int32)
   - **up** (uint32)
   - **down** (uint32)
+  - **trendid** (uint64)
 
 ### userbadge
 Type: userbadge
