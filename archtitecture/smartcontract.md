@@ -48,6 +48,12 @@ Type: addfavotag
   - **autor** (name)
   - **globaltagid** (uint64)
 
+### addsubscrip
+Type: addsubscrip
+
+  - **autor** (name)
+  - **follow** (name)
+
 ### addtag
 Type: addtag
 
@@ -106,6 +112,12 @@ Type: delfavotag
 
   - **autor** (name)
   - **globaltagid** (uint64)
+
+### delsubscrip
+Type: delsubscrip
+
+  - **autor** (name)
+  - **follow** (name)
 
 ### delupload
 Type: delupload
@@ -287,6 +299,8 @@ Type: userconfig
   - **last_act_reset** (time_point)
   - **act_token** (uint16)
   - **last_claim_time** (time_point)
+  - **numofsubscribtions** (uint16)
+  - **numoffollowers** (uint16)
 
 ### userfavorite
 Type: userfavorite
@@ -298,6 +312,12 @@ Type: userfavorite
 Type: userfavotag
 
   - **globaltagid** (uint64)
+
+### usersubscrip
+Type: usersubscrip
+
+  - **username** (uint64)
+  - **creationtime** (time_point)
 
 ### useruploads
 Type: userupload
