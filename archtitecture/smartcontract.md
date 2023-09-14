@@ -184,6 +184,8 @@ Type: comments
   - **language** (string)
   - **commenttext** (string)
   - **token** (int32)
+  - **up** (uint32)
+  - **down** (uint32)
 
 ### configs
 Type: configs
