@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.748015773739">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752581093536">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.4.1">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Cbased Contract</title>
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.4.1.748015773739" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752581093536" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.4.1.748015773739" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.4.1.748015773739" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752581093536" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752581093536" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -280,7 +280,6 @@
 <ul>
 <li><strong>autor</strong> (name)</li>
 <li><strong>text</strong> (string)</li>
-<li><strong>uploadid</strong> (uint64)</li>
 <li><strong>parentcommentid</strong> (uint64)</li>
 <li><strong>language</strong> (string)</li>
 </ul>
@@ -511,6 +510,21 @@
 <li><strong>to</strong> (name)</li>
 <li><strong>message</strong> (string)</li>
 </ul>
+<doc-anchor-target id="setprofile">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setprofile">#</doc-anchor-trigger>
+        <span>setprofile</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: setprofile</p>
+<ul>
+<li><strong>autor</strong> (name)</li>
+<li><strong>profilebio</strong> (string)</li>
+<li><strong>profileimageipfs</strong> (string)</li>
+<li><strong>profileimagefiletyp</strong> (string)</li>
+<li><strong>language</strong> (string)</li>
+<li><strong>otherconfigsasjson</strong> (string)</li>
+</ul>
 <doc-anchor-target id="trustervote">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#trustervote">#</doc-anchor-trigger>
@@ -522,6 +536,18 @@
 <li><strong>trustername</strong> (name)</li>
 <li><strong>uploadid</strong> (uint64)</li>
 <li><strong>vote</strong> (int8)</li>
+</ul>
+<doc-anchor-target id="votecomment">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#votecomment">#</doc-anchor-trigger>
+        <span>votecomment</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: votecomment</p>
+<ul>
+<li><strong>autor</strong> (name)</li>
+<li><strong>vote</strong> (int8)</li>
+<li><strong>commentid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="voteupload">
     <h3>
@@ -624,6 +650,17 @@
 <li><strong>globaltagid</strong> (uint64)</li>
 <li><strong>numoffavorites</strong> (uint64)</li>
 <li><strong>text</strong> (string)</li>
+</ul>
+<doc-anchor-target id="globcomments">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#globcomments">#</doc-anchor-trigger>
+        <span>globcomments</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: globcomments</p>
+<ul>
+<li><strong>commentid</strong> (uint64)</li>
+<li><strong>uploadid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="notifys">
     <h3>
@@ -755,6 +792,11 @@
 <li><strong>last_claim_time</strong> (time_point)</li>
 <li><strong>numofsubscribtions</strong> (uint16)</li>
 <li><strong>numoffollowers</strong> (uint16)</li>
+<li><strong>profilebio</strong> (string)</li>
+<li><strong>profileimageipfs</strong> (string)</li>
+<li><strong>profileimagefiletyp</strong> (string)</li>
+<li><strong>language</strong> (string)</li>
+<li><strong>otherconfigsasjson</strong> (string)</li>
 </ul>
 <doc-anchor-target id="userfavorite">
     <h3>
@@ -807,9 +849,7 @@
 </doc-anchor-target>
 <p>Type: votecomments</p>
 <ul>
-<li><strong>votecommentsid</strong> (uint64)</li>
-<li><strong>commentsid</strong> (uint64)</li>
-<li><strong>autor</strong> (name)</li>
+<li><strong>commentid</strong> (uint64)</li>
 <li><strong>vote</strong> (int8)</li>
 </ul>
 <doc-anchor-target id="votetags">
