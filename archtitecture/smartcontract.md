@@ -18,7 +18,6 @@ Type: addccomment
 
   - **autor** (name)
   - **text** (string)
-  - **uploadid** (uint64)
   - **parentcommentid** (uint64)
   - **language** (string)
 
@@ -149,12 +148,29 @@ Type: senddm
   - **to** (name)
   - **message** (string)
 
+### setprofile
+Type: setprofile
+
+  - **autor** (name)
+  - **profilebio** (string)
+  - **profileimageipfs** (string)
+  - **profileimagefiletyp** (string)
+  - **language** (string)
+  - **otherconfigsasjson** (string)
+
 ### trustervote
 Type: trustervote
 
   - **trustername** (name)
   - **uploadid** (uint64)
   - **vote** (int8)
+
+### votecomment
+Type: votecomment
+
+  - **autor** (name)
+  - **vote** (int8)
+  - **commentid** (uint64)
 
 ### voteupload
 Type: voteupload
@@ -217,6 +233,12 @@ Type: globaltags
   - **globaltagid** (uint64)
   - **numoffavorites** (uint64)
   - **text** (string)
+
+### globcomments
+Type: globcomments
+
+  - **commentid** (uint64)
+  - **uploadid** (uint64)
 
 ### notifys
 Type: notify
@@ -303,6 +325,11 @@ Type: userconfig
   - **last_claim_time** (time_point)
   - **numofsubscribtions** (uint16)
   - **numoffollowers** (uint16)
+  - **profilebio** (string)
+  - **profileimageipfs** (string)
+  - **profileimagefiletyp** (string)
+  - **language** (string)
+  - **otherconfigsasjson** (string)
 
 ### userfavorite
 Type: userfavorite
@@ -330,9 +357,7 @@ Type: userupload
 ### votecomments
 Type: votecomments
 
-  - **votecommentsid** (uint64)
-  - **commentsid** (uint64)
-  - **autor** (name)
+  - **commentid** (uint64)
   - **vote** (int8)
 
 ### votetags
