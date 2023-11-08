@@ -116,7 +116,7 @@ Type: delfavotag
 Type: delsubscrip
 
   - **autor** (name)
-  - **follow** (name)
+  - **unfollow** (name)
 
 ### delupload
 Type: delupload
@@ -345,7 +345,8 @@ Type: userfavotag
 ### usersubscrip
 Type: usersubscrip
 
-  - **username** (uint64)
+  - **subscriptionid** (uint64)
+  - **username** (name)
   - **creationtime** (time_point)
 
 ### useruploads
