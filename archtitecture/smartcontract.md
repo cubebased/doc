@@ -126,7 +126,6 @@ Type: delupload
 ### init
 Type: init
 
-  - **value** (uint16)
 
 ### remcooldown
 Type: remcooldown
@@ -140,6 +139,10 @@ Type: reportupload
   - **autor** (name)
   - **uploadid** (uint64)
   - **violatedrule** (uint8)
+
+### run
+Type: run
+
 
 ### senddm
 Type: senddm
@@ -265,6 +268,15 @@ Type: reportvote
   - **trustername** (uint64)
   - **vote** (int8)
 
+### stats
+Type: stats
+
+  - **id** (uint64)
+  - **text** (string)
+  - **time** (time_point)
+  - **uint64number** (uint64)
+  - **int64number** (int64)
+
 ### tags
 Type: tags
 
@@ -272,6 +284,13 @@ Type: tags
   - **text** (string)
   - **autor** (name)
   - **token** (int32)
+
+### todelete
+Type: todelete
+
+  - **id** (uint64)
+  - **timetodelete** (time_point_sec)
+  - **uploadid** (uint64)
 
 ### trends
 Type: trend
