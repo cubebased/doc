@@ -321,7 +321,7 @@ Type: uploads
   - **flag** (uint8)
   - **numofcomments** (uint32)
   - **numoffavorites** (uint32)
-  - **token** (int32)
+  - **token** (uint64)
   - **up** (uint32)
   - **down** (uint32)
   - **trendid** (uint64)
