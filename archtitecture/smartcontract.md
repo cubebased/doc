@@ -268,8 +268,8 @@ Type: reportvote
   - **trustername** (uint64)
   - **vote** (int8)
 
-### stats
-Type: stats
+### statistics
+Type: statistics
 
   - **id** (uint64)
   - **text** (string)
