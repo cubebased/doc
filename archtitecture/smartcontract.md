@@ -69,11 +69,12 @@ Type: addtruster
 Type: addupload
 
   - **autor** (name)
-  - **ipfshash** (string)
-  - **ipfshash_thumb** (string)
+  - **uploadipfshash** (string)
+  - **thumbipfshash** (string)
   - **uploadtext** (string)
   - **language** (string)
-  - **filetyp** (string)
+  - **uploadfiletyp** (string)
+  - **thumbfiletyp** (string)
   - **flag** (uint8)
 
 ### banuser
@@ -313,9 +314,10 @@ Type: uploads
   - **uploadid** (uint64)
   - **autor** (name)
   - **creationtime** (time_point)
-  - **ipfshash** (string)
-  - **ipfshash_filetyp** (string)
-  - **ipfshash_thumb** (string)
+  - **uploadipfshash** (string)
+  - **uploadipfshash_filetyp** (string)
+  - **thumbipfshash** (string)
+  - **thumbipfshash_filetyp** (string)
   - **uploadtext** (string)
   - **language** (string)
   - **flag** (uint8)
