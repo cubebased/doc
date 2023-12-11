@@ -140,6 +140,7 @@ Type: reportupload
   - **autor** (name)
   - **uploadid** (uint64)
   - **violatedrule** (uint8)
+  - **reporttext** (string)
 
 ### run
 Type: run
@@ -258,6 +259,7 @@ Type: report
   - **uploadid** (uint64)
   - **reportername** (uint64)
   - **violatedrule** (uint8)
+  - **reporttext** (string)
   - **reporttime** (time_point)
   - **numberoftrusters** (uint8)
   - **outstandingvotes** (uint8)
@@ -268,6 +270,13 @@ Type: reportvote
 
   - **trustername** (uint64)
   - **vote** (int8)
+
+### rulelists
+Type: rulelist
+
+  - **ruleid** (uint64)
+  - **ruletext** (string)
+  - **punishment** (string)
 
 ### statistics
 Type: statistics
