@@ -253,6 +253,13 @@ Type: notify
   - **type** (uint16)
   - **notificationtext** (string)
 
+### popular
+Type: popular
+
+  - **popularid** (uint64)
+  - **uploadid** (uint64)
+  - **creationtime** (time_point)
+
 ### reports
 Type: report
 
@@ -270,13 +277,6 @@ Type: reportvote
 
   - **trustername** (uint64)
   - **vote** (int8)
-
-### rulelists
-Type: rulelist
-
-  - **ruleid** (uint64)
-  - **ruletext** (string)
-  - **punishment** (string)
 
 ### statistics
 Type: statistics
@@ -301,13 +301,6 @@ Type: todelete
   - **id** (uint64)
   - **timetodelete** (time_point_sec)
   - **uploadid** (uint64)
-
-### trends
-Type: trend
-
-  - **trendid** (uint64)
-  - **uploadid** (uint64)
-  - **creationtime** (time_point)
 
 ### trusters
 Type: truster
@@ -335,7 +328,7 @@ Type: uploads
   - **token** (uint64)
   - **up** (uint32)
   - **down** (uint32)
-  - **trendid** (uint64)
+  - **popularid** (uint64)
 
 ### userbadge
 Type: userbadge
