@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.755579965383">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.756156696302">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.755579965383" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.756156696302" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.755579965383" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.756156696302" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.755579965383" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.756156696302" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -681,6 +681,18 @@
 <li><strong>type</strong> (uint16)</li>
 <li><strong>notificationtext</strong> (string)</li>
 </ul>
+<doc-anchor-target id="popular">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#popular">#</doc-anchor-trigger>
+        <span>popular</span>
+    </h3>
+</doc-anchor-target>
+<p>Type: popular</p>
+<ul>
+<li><strong>popularid</strong> (uint64)</li>
+<li><strong>uploadid</strong> (uint64)</li>
+<li><strong>creationtime</strong> (time_point)</li>
+</ul>
 <doc-anchor-target id="reports">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#reports">#</doc-anchor-trigger>
@@ -708,18 +720,6 @@
 <ul>
 <li><strong>trustername</strong> (uint64)</li>
 <li><strong>vote</strong> (int8)</li>
-</ul>
-<doc-anchor-target id="rulelists">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rulelists">#</doc-anchor-trigger>
-        <span>rulelists</span>
-    </h3>
-</doc-anchor-target>
-<p>Type: rulelist</p>
-<ul>
-<li><strong>ruleid</strong> (uint64)</li>
-<li><strong>ruletext</strong> (string)</li>
-<li><strong>punishment</strong> (string)</li>
 </ul>
 <doc-anchor-target id="statistics">
     <h3>
@@ -760,18 +760,6 @@
 <li><strong>timetodelete</strong> (time_point_sec)</li>
 <li><strong>uploadid</strong> (uint64)</li>
 </ul>
-<doc-anchor-target id="trends">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#trends">#</doc-anchor-trigger>
-        <span>trends</span>
-    </h3>
-</doc-anchor-target>
-<p>Type: trend</p>
-<ul>
-<li><strong>trendid</strong> (uint64)</li>
-<li><strong>uploadid</strong> (uint64)</li>
-<li><strong>creationtime</strong> (time_point)</li>
-</ul>
 <doc-anchor-target id="trusters">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#trusters">#</doc-anchor-trigger>
@@ -808,7 +796,7 @@
 <li><strong>token</strong> (uint64)</li>
 <li><strong>up</strong> (uint32)</li>
 <li><strong>down</strong> (uint32)</li>
-<li><strong>trendid</strong> (uint64)</li>
+<li><strong>popularid</strong> (uint64)</li>
 </ul>
 <doc-anchor-target id="userbadge">
     <h3>
