@@ -324,6 +324,7 @@ Type: uploads
   - **language** (string)
   - **flag** (uint8)
   - **numofcomments** (uint32)
+  - **numoftags** (uint32)
   - **numoffavorites** (uint32)
   - **token** (uint64)
   - **up** (uint32)
