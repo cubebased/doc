@@ -347,6 +347,7 @@ Type: userconfig
   - **last_act_reset** (time_point)
   - **act_token** (uint16)
   - **last_claim_time** (time_point)
+  - **istruster** (bool)
   - **numofsubscribtions** (uint16)
   - **numoffollowers** (uint16)
   - **numofuploads** (uint16)
