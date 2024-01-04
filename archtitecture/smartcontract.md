@@ -93,7 +93,6 @@ Type: claimrewards
 
   - **autor** (name)
   - **symbol** (string)
-  - **value** (uint64)
 
 ### deldm
 Type: deldm
