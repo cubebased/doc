@@ -77,16 +77,16 @@ Type: addupload
   - **thumbfiletyp** (string)
   - **flag** (uint8)
 
+### applytruster
+Type: applytruster
+
+  - **autor** (name)
+  - **applicationtimeinweek** (uint8)
+
 ### banuser
 Type: banuser
 
   - **username** (name)
-
-### betruster
-Type: betruster
-
-  - **autor** (name)
-  - **applicationtimeinweek** (uint8)
 
 ### claimrewards
 Type: claimrewards
@@ -301,6 +301,13 @@ Type: todelete
   - **timetodelete** (time_point_sec)
   - **uploadid** (uint64)
 
+### trusterapply
+Type: trusterapply
+
+  - **trustername** (name)
+  - **applicationtime** (time_point)
+  - **applicationtimeinweek** (uint8)
+
 ### trusters
 Type: truster
 
@@ -342,6 +349,7 @@ Type: userbadge
 Type: userconfig
 
   - **configid** (uint64)
+  - **creationtime** (time_point)
   - **active** (uint8)
   - **last_act_reset** (time_point)
   - **act_token** (uint16)
