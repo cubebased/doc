@@ -112,6 +112,11 @@ Type: delfavotag
   - **autor** (name)
   - **globaltagid** (uint64)
 
+### delkarma
+Type: delkarma
+
+  - **p_truster** (name)
+
 ### delsubscrip
 Type: delsubscrip
 
@@ -312,7 +317,7 @@ Type: trusterapply
 Type: truster
 
   - **trustername** (uint64)
-  - **karma** (uint16)
+  - **karma** (uint64)
   - **status** (uint8)
   - **election_date** (time_point)
 
