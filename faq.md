@@ -14,7 +14,7 @@ order: 998
 
 The [Flutter Application](https://github.com/cubebased/flutterapp) use the [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage) library which provides an secure storage for each platform (Android, IOS, Web, ...). All important information like privatekey or username are stored there.
 
-Please note for web that the library use an experimental implementation of WebCrypto. This means that the use is at your own risk at this time. Feedback to improve it is welcome.
+**Please note for web** that the library use an experimental implementation of WebCrypto. **This means that the use is at your own risk at this time.** Feedback to improve it is welcome.
 
 
 ## Where and how can I invest in the project ?
@@ -39,6 +39,6 @@ The code is hosted on [GitHub](https://github.com/cubebased)
 
 ## What are the official channels ?
 
-[Telegram]()
-[X.com]()
+* [Telegram]()
+* [X.com]()
  
