@@ -12,9 +12,8 @@ order: 1000
 
 <p align="center">
     <a href="https://github.com/cubebased/doc/discussions"><img src="https://img.shields.io/badge/Discussions-gray.svg?logo=github" alt="GitHub Discussions"></a>
-    <a href="https://app.cubebased.com/"><img src="https://img.shields.io/badge/Reddit-white.svg?logo=reddit" alt="Reddit"></a>
-    <a href="https://app.cubebased.com/"><img src="https://img.shields.io/badge/Telegram-white.svg?logo=telegram" alt="Telegram"></a>
-    <a href="https://twitter.com/cubebased"><img src="https://img.shields.io/badge/Twitter-white.svg?logo=twitter" alt="Twitter"></a>
+    <a href="https://t.me/cubebased"><img src="https://img.shields.io/badge/Telegram-white.svg?logo=telegram" alt="Telegram"></a>
+    <a href="https://twitter.com/cubebased_com"><img src="https://img.shields.io/badge/Twitter-white.svg?logo=twitter" alt="Twitter"></a>
     <a href="https://app.cubebased.com/"><img src="https://img.shields.io/badge/App-blue.svg" alt="App"></a>
     <a href="https://doc.cubebased.com"><img src="https://img.shields.io/badge/Doc-blue.svg" alt="Doc"></a>
     <a href="https://cubebased.com/"><img src="https://img.shields.io/badge/Website-blue.svg" alt="Website"></a>
@@ -22,7 +21,7 @@ order: 1000
 
 Cubebased is a decentralized media plattform useing [IPFS](https://ipfs.io) and based on [EOS](https://eos.io/). Moderators on the platform are chosen by the community itself. With good content tokens can be earned, which can be exchanged later for real money. The media and the metadata are distributed all over the world and cannot be easily removed by governments and organizations. <b>[Link to Application](https://app.cubebased.com)</b>
 
-<b>You are currently on the [documentation page](https://doc.cubebased.com) , on this page we will further touch on the rules and technology.</b>
+<b>You are currently on the [documentation page](https://doc.cubebased.com) , on this page we take a closer look at the rules and technology.</b>
 
 
 ## Table of content

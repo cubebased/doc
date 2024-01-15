@@ -28,7 +28,7 @@ The [Flutter Application](https://github.com/cubebased/flutterapp) use the [flut
 The content is stored on the IPFS network [(This 5 min video explaining best IPFS)](https://www.youtube.com/watch?v=TbagkanDeiU). The files are stored on the computers of the users or are stored by service providers for users.
 
 ## Where is the code hosted ?
-The code is hosted on [GitHub](https://github.com/cubebased)
+The code is hosted on [GitHub](https://github.com/cubebased).
 
 ## Where can I report errors or problems?
 
@@ -37,8 +37,14 @@ The code is hosted on [GitHub](https://github.com/cubebased)
 ### For the Chain
 * [Github](https://github.com/cubebased/blockchain/issues)
 
+# What is the difference between active and owner permission
+
+Both are main types of permissions in the EOS blockchain. The **Owner** permission provides the highest level of authority and allows a user to make significant changes to the account, including changing other permissions. This authorization should be kept very secure and should only be used for essential changes. The **Active** authorization, on the other hand, is intended for everyday actions.
+
+In the case that an unauthorized person gets access to the Private key from the **Active** permission, the Owner permission can be used to **reset the Public key** from the **Active** permission and the attacker have no access anymore.
+
 ## What are the official channels ?
 
-* [Telegram]()
-* [X.com]()
+* [Telegram](https://t.me/cubebased)
+* [X.com](https://twitter.com/cubebased_com)
  
