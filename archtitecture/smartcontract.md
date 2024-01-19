@@ -241,6 +241,7 @@ Type: globaltags
 
   - **globaltagid** (uint64)
   - **numoffavorites** (uint64)
+  - **trend** (uint64)
   - **text** (string)
 
 ### globcomments
