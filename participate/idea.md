@@ -5,4 +5,14 @@ icon: rocket
 tags: [participate]
 ---
 
+If you have an idea for a new feature or a new content type, please create a new issue in the [Github repository](https://github.com/cubebased/flutterapp).
 
+## Template
+
+### Description
+
+A clear and concise description of what the idea is.
+
+### Images / Videos (optional)
+
+add images or videos to help explain your idea.

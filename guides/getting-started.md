@@ -4,4 +4,27 @@ icon: rocket
 tags: [guide]
 ---
 
+# Getting Started
 
+## Overview
+
+This guide will help you to get started with the CubeBased platform. It will guide you through the process of creating an account and uploading content.
+
+## Application
+
+* [Web](https://app.cubebased.com)
+* [Android]()
+* [iOS]()
+
+
+## Create an account (multiple options)
+
+* Visit the [Foundation website]().
+* Get invited by an existing user.
+
+## Upload content
+
+1. Choose an [IPFS Provider]() or [host your own IPFS node]().
+2. Upload your content to IPFS.
+3. Login into into Cubebased and press the upload button on the top right.
+4. Follow the instructions on the screen.

@@ -29,9 +29,9 @@ A Block Producer in the EOS blockchain network is responsible for creating and v
 ## How to become a Block Producer?
 To become a Block Producer on the EOS blockchain, you need to follow these steps:
 
-1. Technical Setup: First, you'll need to set up the necessary technical infrastructure, including servers and network equipment. Ensure your hardware and software configurations meet the requirements.
+1. Technical Setup: First, you'll need to set up the necessary technical infrastructure, including servers and network equipment. You can use your own hardware or rent a server from a cloud provider. Then you can run this [Docker Container](https://github.com/cubebased/blockchainnode).
 
-2. Votes: You need to receive votes from the community. The EOS blockchain uses a Delegated Proof of Stake (DPoS) consensus mechanism, which means that the community votes for Block Producers. The top 21 Block Producers with the most votes are elected to produce blocks. If you hold a substantial amount of stake tokens you demonstrates your commitment to the network and you will more likely receive votes from the community.
+2. Votes: You need to receive votes from the community. The EOS blockchain uses a Delegated Proof of Stake (DPoS) consensus mechanism, which means that the community votes for Block Producers. The top 21 Block Producers with the most votes are elected to produce blocks. Make people aware of you. Offer an additional [viewer instance](https://doc.cubebased.com/participate/viewerinstance/) to show that you are supporting the community, then you will more likely receive votes from the community.
 
 4. Register as a Candidate: Register your intent to become a Block Producer. Submitting your Block Producer information and details to the community. 
 
