@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758996367107">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.759021365234">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Authentication</title>
     <meta name="title" content="Authentication">
+    <meta name="description" content="Authentication in this particular blockchain network is achieved through a sophisticated system of key pairs and permissions, offering a balance of...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://doc.cubebased.com/archtitecture/auth/">
@@ -19,19 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://doc.cubebased.com/archtitecture/auth/">
     <meta property="og:title" content="Authentication">
+    <meta property="og:description" content="Authentication in this particular blockchain network is achieved through a sophisticated system of key pairs and permissions, offering a balance of...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://doc.cubebased.com/archtitecture/auth/">
     <meta property="twitter:title" content="Authentication">
+    <meta property="twitter:description" content="Authentication in this particular blockchain network is achieved through a sophisticated system of key pairs and permissions, offering a balance of...">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.758996367107" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.759021365234" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.758996367107" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.759021365234" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.758996367107" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.759021365234" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -250,6 +253,17 @@
         <span>Authentication</span>
     </h1>
 </doc-anchor-target>
+<p>Authentication in this particular blockchain network is achieved through a sophisticated system of key pairs and permissions, offering a balance of security and flexibility. Here&#x27;s an overview of the process:</p>
+<ul>
+<li><p><strong>Public and Private Keys:</strong> The foundation of authentication in this blockchain system is cryptographic key pairs, consisting of a public key and a private key. These keys are used to sign and verify transactions, ensuring that only the holder of the private key can execute transactions on behalf of the associated account.</p>
+</li>
+<li><p><strong>Account Creation:</strong> To interact with the network, one must first create an account. During account creation, specific permissions are assigned to one or more public keys. These keys are then used for authentication and to sign transactions.</p>
+</li>
+<li><p><strong>Permission Levels:</strong> The system employs a multi-level permission structure. Each account can have various levels of permissions for different types of transactions. This flexible structure allows users to set up permissions according to their specific needs, enhancing security and operational efficiency.</p>
+</li>
+<li><p><strong>Signing Transactions:</strong> To perform a transaction, the user signs it with their private key. This signature is used to verify that the transaction has been authorized by the owner of the account. The network checks the signature against the public key associated with the account&#x27;s permissions.</p>
+</li>
+</ul>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
