@@ -181,6 +181,13 @@ Type: votecomment
   - **vote** (int8)
   - **commentid** (uint64)
 
+### votetag
+Type: votetag
+
+  - **autor** (name)
+  - **vote** (int8)
+  - **globuptagid** (uint64)
+
 ### voteupload
 Type: voteupload
 
@@ -242,12 +249,21 @@ Type: globaltags
   - **globaltagid** (uint64)
   - **numoffavorites** (uint64)
   - **trend** (uint64)
+  - **numofuploads** (uint64)
+  - **up** (uint64)
+  - **down** (uint64)
   - **text** (string)
 
 ### globcomments
 Type: globcomments
 
   - **commentid** (uint64)
+  - **uploadid** (uint64)
+
+### globuptags
+Type: globuptags
+
+  - **globuptagid** (uint64)
   - **uploadid** (uint64)
 
 ### notifys
@@ -295,7 +311,8 @@ Type: statistics
 ### tags
 Type: tags
 
-  - **tagid** (uint64)
+  - **globuptagid** (uint64)
+  - **globaltagid** (uint64)
   - **text** (string)
   - **autor** (name)
   - **token** (int32)
@@ -410,10 +427,7 @@ Type: votecomments
 ### votetags
 Type: votetags
 
-  - **votetagsid** (uint64)
-  - **tagid** (uint64)
   - **autor** (name)
-  - **vote** (int8)
 
 ### voteuploads
 Type: voteuploads
