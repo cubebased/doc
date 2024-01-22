@@ -259,6 +259,7 @@ Type: dm
 Type: globaltags
 
   - **globaltagid** (uint64)
+  - **creationtime** (time_point_sec)
   - **numoffavorites** (uint64)
   - **trend** (uint64)
   - **numofuploads** (uint64)
