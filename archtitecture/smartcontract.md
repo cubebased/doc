@@ -35,6 +35,12 @@ Type: addcooldown
   - **autor** (name)
   - **action** (uint16)
 
+### addfavocom
+Type: addfavocom
+
+  - **autor** (name)
+  - **commentid** (uint64)
+
 ### addfavorite
 Type: addfavorite
 
@@ -99,6 +105,12 @@ Type: deldm
 
   - **autor** (name)
   - **dmid** (uint64)
+
+### delfavocom
+Type: delfavocom
+
+  - **autor** (name)
+  - **commentid** (uint64)
 
 ### delfavorite
 Type: delfavorite
@@ -393,6 +405,12 @@ Type: userconfig
   - **profileimagefiletyp** (string)
   - **language** (string)
   - **otherconfigsasjson** (string)
+
+### userfavocom
+Type: userfavocom
+
+  - **commentid** (uint64)
+  - **creationtime** (time_point)
 
 ### userfavorite
 Type: userfavorite
