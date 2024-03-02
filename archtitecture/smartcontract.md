@@ -169,6 +169,13 @@ Type: senddm
   - **to** (name)
   - **message** (string)
 
+### setconfig
+Type: setconfig
+
+  - **configid** (uint64)
+  - **uintvalue** (uint64)
+  - **stringvalue** (string)
+
 ### setprofile
 Type: setprofile
 
