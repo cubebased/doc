@@ -8,11 +8,6 @@ tags: [architecture]
 # Cbased Contract
 The account with the accountname Cbased is the main contract and consists of functions and tables. The order of the parameters is crucial for the integration with the Smart Contract. The developing of the cbased contract is still in process.
 ## Actions
-### activateuser
-Type: activateuser
-
-  - **username** (name)
-
 ### addccomment
 Type: addccomment
 
